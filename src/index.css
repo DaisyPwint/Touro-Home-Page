@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+   body{
+    @apply text-gray-700
+   }
+}
+
+.react-datepicker{
+   font-family: 'Poppins', 'sans-serif';
+   font-size: 15px;
+   color: #374151;
+   padding: 7px;
+}
+.react-datepicker__header{
+   background-color: #fff;
+}
+.react-datepicker-wrapper{
+   width: 75%;
+}
+.react-datepicker__input-container input{
+   outline: none;
+   color: #030712;
+   padding: 6px 6px 6px 0px;
+   width: 100%;
+}
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+   width: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+   .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+      width: 1.8rem;
+   }
+}
